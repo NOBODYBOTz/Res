@@ -7,7 +7,7 @@ else
   echo "Cloning $BRANCH branch...."
   git clone https://github.com/NOBODYBOTz/Res -b $BRANCH /NOBODYBOTz/Res
 fi
-cd Jisshubot/Jisshu-forward-bot 
+cd NOBODYBOTz/Res 
 pip3 install -U -r requirements.txt
 echo "Starting Bot...."
 gunicorn app:app & python3 main.py
