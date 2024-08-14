@@ -4,11 +4,11 @@ from config import Config
 class Translation(object):
   START_TXT = """<b>Hᴇʏ {},{}</b>
 
-◈ I Aᴍ A Aᴅᴠᴀɴᴄᴇᴅ Aᴜᴛᴏ Fᴏʀᴡᴀʀᴅ Bᴏᴛ.
+<blockquote>◈ I Aᴍ A Aᴅᴠᴀɴᴄᴇᴅ Aᴜᴛᴏ Fᴏʀᴡᴀʀᴅ Bᴏᴛ.
 ◈ I Cᴀɴ Fᴏʀᴡᴀʀᴅ Aʟʟ Mᴇꜱꜱᴀɢᴇ Fʀᴏᴍ Oɴᴇ Cʜᴀɴɴᴇʟ Tᴏ Aɴᴏᴛʜᴇʀ Cʜᴀɴɴᴇʟ.
 ◈ Cʟɪᴄᴋ Hᴇʟᴘ Bᴜᴛᴛᴏɴ Tᴏ Kɴᴏᴡ Mᴏʀᴇ Aʙᴏᴜᴛ Mᴇ.
 
-<blockquote>ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ: <a href='https://t.me/JISSHU_BOTS'>Jɪssʜᴜ ʙᴏᴛs</a></blockquote></b>"""
+ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ: <a href='https://t.me/Manager_Friday_bot'> 🇮🇳 𝙵𝚁𝙸𝙳𝙰𝚈 </a></blockquote></b>"""
 
 
   HELP_TXT = """<b><u>🛠️ HELP</b></u>
@@ -41,14 +41,13 @@ class Translation(object):
   
   ABOUT_TXT = """<b>
 ╭───────────⍟
-├◈ ᴍy ɴᴀᴍᴇ : <a href=https://t.me/Jisshu_forward_bot>Auto Forward Bot</a>
-├◈ Dᴇᴠᴇʟᴏᴩᴇʀꜱ : <a href=https://t.me/MR_JISSHU>Mr.Jisshu</a> 
-├◈ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ: <a href=https://t.me/JISSHU_BOTS>JISSHU BOTS </a>   
-├◈ Lɪʙʀᴀʀy : <a href=https://github.com/pyrogram>Pyʀᴏɢʀᴀᴍ</a>
-├◈ Lᴀɴɢᴜᴀɢᴇ: <a href=https://www.python.org/>Pʏᴛʜᴏɴ 𝟹</a>
-├◈ Dᴀᴛᴀ Bᴀꜱᴇ: <a href=https://cloud.mongodb.com/>Mᴏɴɢᴏ DB</a>
-├◈ Bot Vᴇʀꜱɪᴏɴ: <a href=https://github.com/Jisshubot/Jisshu-forward-bot>V-2.4.1
-├◈ Bᴏᴛ Sᴏᴜʀᴄᴇ: <a href=https://github.com/Jisshubot/Jisshu-forward-bot>My Repo</a>
+├◈ ᴍy ɴᴀᴍᴇ : <a href=https://t.me/AUTO_FORWARD_A1_BOT>ᴀᴜᴛᴏ ғᴏʀᴡᴀʀᴅ ʙᴏᴛ</a>
+├◈ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href=https://t.me/Manager_Friday_bot>Mr.Jisshu</a> 
+├◈ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ: <a href=https://t.me/NOBODY_BOTz>ɴᴏʙᴏᴅʏ ʙᴏᴛᴢ </a>   
+├◈ ʟɪʙʀᴀʀʏ : <a href=https://github.com/pyrogram>ᴘʏʀᴏɢʀᴀᴍ</a>
+├◈ ʟᴀɴɢᴜᴀɢᴇ: <a href=https://www.python.org/>ᴘʏᴛʜᴏɴ 𝟹</a>
+├◈ ᴅᴀᴛᴀʙᴀsᴇ: <a href=https://cloud.mongodb.com/>ᴍᴏɴɢᴏ ᴅʙ</a>
+├◈ ʙᴏᴛ ᴠᴇʀsɪᴏɴ: <a href=https://t.me/AUTO_FORWARD_A1_BOT>ʙᴇᴛᴀ 𝟷.𝟶.𝟼
 ╰───────────────⍟</b>"""
   
   STATUS_TXT = """<b><u>Bot Status</u>
