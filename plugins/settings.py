@@ -12,7 +12,7 @@ CLIENT = CLIENT()
 async def settings(client, message):
    await message.delete()
    await message.reply_photo(
-      photo=https://graph.org/file/90987879ebd5ace5ef88d.jpg,
+      photo="https://graph.org/file/90987879ebd5ace5ef88d.jpg",
       reply_markup=main_buttons(),
       caption="<b>change your settings as your wish</b>"      
      )
