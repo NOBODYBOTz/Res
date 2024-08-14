@@ -12,13 +12,13 @@ from pyrogram.types import *
 TIMEZONE = "Asia/Kolkata"
 
 main_buttons = [[
-        InlineKeyboardButton('🦋 ᴜᴘᴅᴀᴛᴇs ', url='https://t.me/@NOBODY_BOTz'),
-        InlineKeyboardButton(' sᴜᴘᴘᴏʀᴛ ✨', url='https://t.me/NOBODY_BOTz_support')
+        InlineKeyboardButton(' ᴜᴘᴅᴀᴛᴇs ', url='https://t.me/@NOBODY_BOTz'),
+        InlineKeyboardButton(' sᴜᴘᴘᴏʀᴛ ', url='https://t.me/NOBODY_BOTz_support')
         ],[
-        InlineKeyboardButton('🛠️ ʜᴇʟᴘ', callback_data='help'),
-        InlineKeyboardButton(' ᴀʙᴏᴜᴛ 😎', callback_data='about')
+        InlineKeyboardButton(' ʜᴇʟᴘ', callback_data='help'),
+        InlineKeyboardButton(' ᴀʙᴏᴜᴛ ', callback_data='about')
         ],[
-        InlineKeyboardButton('🛠️ sᴇᴛᴛɪɴɢs ⚙️', callback_data='settings#main')
+        InlineKeyboardButton(' sᴇᴛᴛɪɴɢs ', callback_data='settings#main')
         ]]
 #===================Start Function===================#
 
@@ -94,12 +94,12 @@ async def helpcb(bot, query):
         text=Translation.HELP_TXT,
         reply_markup=InlineKeyboardMarkup(
             [[
-            InlineKeyboardButton('🛠️ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ 🛠️', callback_data='how_to_use')
+            InlineKeyboardButton(' ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ', callback_data='how_to_use')
             ],[
-            InlineKeyboardButton('⚙️ sᴇᴛᴛɪɴɢs ⚙️', callback_data='settings#main'),
-            InlineKeyboardButton('📊 sᴛᴀᴛᴜs 📊', callback_data='status')
+            InlineKeyboardButton(' sᴇᴛᴛɪɴɢs ', callback_data='settings#main'),
+            InlineKeyboardButton(' sᴛᴀᴛᴜs ', callback_data='status')
             ],[
-            InlineKeyboardButton('⛔ ʙᴀᴄᴋ', callback_data='back')
+            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='back')
             ]]
         ))
 
@@ -107,7 +107,7 @@ async def helpcb(bot, query):
 async def how_to_use(bot, query):
     await query.message.edit_text(
         text=Translation.HOW_USE_TXT,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⛔ Back', callback_data='help')]]),
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(' Back', callback_data='help')]]),
         disable_web_page_preview=True
     )
 
@@ -136,7 +136,7 @@ async def about(bot, query):
         media=InputMediaPhoto(
         media="https://graph.org/file/b0341b870b8662a8f8e1f.jpg",
         caption=Translation.ABOUT_TXT),
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⛔ Back', callback_data='back')]])
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(' Back', callback_data='back')]])
         )
 
 @Client.on_callback_query(filters.regex(r'^status'))
@@ -145,7 +145,7 @@ async def status(bot, query):
     total_channels = await db.total_channels()
     await query.message.edit_text(
         text=Translation.STATUS_TXT.format(users_count, bots_count, temp.forwardings, total_channels, temp.BANNED_USERS ),
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⛔ Back', callback_data='help')]]),
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(' Back', callback_data='help')]]),
         parse_mode=enums.ParseMode.HTML,
         disable_web_page_preview=True,
     )
