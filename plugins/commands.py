@@ -70,7 +70,7 @@ async def start(client, message):
         gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 🌑"
     await client.send_photo(
         chat_id=message.chat.id,
-        photo=Config.PICS,
+        photo=https://graph.org/file/b0341b870b8662a8f8e1f.jpg,
         reply_markup=reply_markup,
         caption=Translation.START_TXT.format(message.from_user.mention, gtxt)
     )
